@@ -10,15 +10,25 @@
 body{
     font-family: 'Playfair Display', serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #383838;
 }
 
-h1, h2 {
+h1{
+    font-weight: 500;
+}
+
+h2{
     font-weight: 300;
     line-height: 1.2;
 }
 
 .container{
     display: flex;
+}
+
+p{
+    font-size: 1.1rem;
 }
 
 #header{
@@ -41,7 +51,7 @@ h1, h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 0 250px;
     height: 100%;
 }
 
@@ -71,7 +81,9 @@ h1, h2 {
 }
 
 #main .container.box .info, #main .container.box-reverse .info{
-    padding: 30px;
+    padding: 50px;
+    align-self: center;
+    justify-content: center;
 }
 /* Footer */
 .footer {
