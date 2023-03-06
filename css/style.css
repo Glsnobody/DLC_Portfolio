@@ -28,7 +28,7 @@ h2{
 }
 
 p{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 #header{
@@ -47,12 +47,12 @@ p{
 }
 
 #main{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 250px;
     height: 100%;
+    width: 95vw;
 }
 
 #main h2{
@@ -65,7 +65,11 @@ p{
 }
 
 #main img{
-    width: 600px;
+    width: 700px;
+}
+
+#main img[class="port"]{
+    width: 500px;
 }
 
 #main .container.box{
@@ -77,11 +81,22 @@ p{
 }
 
 #main .container.box, #main .container.box-reverse{
-    margin: 50px 0;
+    margin: 60px 0;
+}
+
+#main a:hover{
+    opacity: 0.9;
+}
+
+#main .container.box .info{
+    margin-left: 75px;
+}
+
+#main .container.box-reverse .info{
+    margin-right: 75px;
 }
 
 #main .container.box .info, #main .container.box-reverse .info{
-    padding: 50px;
     align-self: center;
     justify-content: center;
 }
