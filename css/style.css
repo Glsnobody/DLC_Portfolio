@@ -35,22 +35,19 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 40px;
 }
 
 #header h1{
     font-size: 2rem;
 }
 
-#header img{
-    width: 100px;
-}
 
 #main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 250px;
+    padding: 0 200px;
     height: 100%;
     width: 95vw;
 }
@@ -69,19 +66,23 @@ p{
 }
 
 #main img[class="port"]{
-    width: 500px;
+    width: 600px;
 }
 
 #main .container.box{
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #main .container.box-reverse{
     flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
 }
 
 #main .container.box, #main .container.box-reverse{
-    margin: 60px 0;
+    margin: 100px 0;
 }
 
 #main a:hover{
@@ -89,17 +90,29 @@ p{
 }
 
 #main .container.box .info{
-    margin-left: 75px;
+    margin-left: 150px;
 }
 
 #main .container.box-reverse .info{
-    margin-right: 75px;
+    margin-right: 150px;
 }
 
 #main .container.box .info, #main .container.box-reverse .info{
     align-self: center;
     justify-content: center;
 }
+
+.hide{
+    transition: all 0.5s ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show{
+    visibility: visible;
+    opacity: 1;
+}
+
 /* Footer */
 .footer {
     display: flex;
@@ -108,4 +121,68 @@ p{
     justify-content: center;
     text-align: center;
     height: 200px;
+}
+
+/* MediaQuerys */
+
+@media (max-width: 1750px){
+
+    #main{
+        padding: 0 125px;
+        width: 100vw;
+    }
+    #main img{
+        width: 600px;
+    }
+    
+    #main img[class="port"]{
+        width: 400px;
+    }
+
+    #main h2{
+        font-size: 2.5rem
+    }
+
+    #main p{
+        font-size: 1rem;
+    }
+
+    #main .container.box .info{
+        margin-left: 70px;
+    }
+    
+    #main .container.box-reverse .info{
+        margin-right: 70px;
+    }
+}
+
+@media (max-width: 1300px){
+    #main{
+        padding: 0 200px;
+        width: 100vw;
+    }
+
+    #main .container.box, #main .container.box-reverse{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #main .container.box, #main .container.box-reverse{
+        margin: 50px 0;
+    }
+
+    #main img{
+        width: 600px;
+        margin-bottom: 50px;
+    }
+    
+    #main img[class="port"]{
+        width: 600px;
+    }
+
+    #main .container.box .info, #main .container.box-reverse .info{
+        align-self: center;
+        justify-content: center;
+    }
 }
