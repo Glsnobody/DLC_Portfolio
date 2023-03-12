@@ -143,6 +143,7 @@ a{
 
 .footer i{
     color: #383838;
+    font-size: 1.5rem;
 }
 
 .footer a{
@@ -238,7 +239,13 @@ a{
         width: 450px;
     }
 
-    
+    .footer .social{
+        flex-direction: column;
+    }
+
+    .footer .social i, .footer .social a{
+        margin: 3px 0;
+    }
 
     .footer p{
         font-size: 1rem;
@@ -261,13 +268,5 @@ a{
 
     #main h4{
         font-size: 0.9rem;
-    }
-
-    .footer .social{
-        flex-direction: column;
-    }
-
-    .footer .social i, .footer .social a{
-        margin: 3px 0;
     }
 }
