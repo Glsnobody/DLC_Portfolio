@@ -31,6 +31,11 @@ p{
     font-size: 1.3rem;
 }
 
+a{
+    text-decoration: none;
+    color: #383838;
+}
+
 #header{
     display: flex;
     justify-content: space-between;
@@ -39,7 +44,7 @@ p{
 }
 
 #header h1{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 
@@ -59,6 +64,10 @@ p{
 
 #main h3{
     font-size: 2rem;
+}
+
+#main h4{
+    font-size: 1.5rem;
 }
 
 #main img{
@@ -114,13 +123,35 @@ p{
 }
 
 /* Footer */
-.footer {
+.footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 200px;
+    height: 300px;
+    color: #383838;
+}
+
+.footer .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer i{
+    color: #383838;
+}
+
+.footer a{
+    font-size: 1.3rem;
+    margin: 0 20px;
+}
+
+.footer a:hover{
+    color: #787878;
 }
 
 /* MediaQuerys */
@@ -157,6 +188,9 @@ p{
 }
 
 @media (max-width: 1300px){
+    #header{
+        justify-content: center;
+    }
     #main{
         padding: 0 200px;
         width: 100vw;
@@ -184,5 +218,56 @@ p{
     #main .container.box .info, #main .container.box-reverse .info{
         align-self: center;
         justify-content: center;
+    }
+
+    #main .container.box .info, #main .container.box-reverse .info{
+        margin: 0;
+    }
+
+    .footer .social a, .footer .social i{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 700px){
+    #main img{
+        width: 450px;
+        margin-bottom: 50px;
+    }
+    
+    #main img[class="port"]{
+        width: 450px;
+    }
+
+    
+
+    .footer p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px){
+
+    #main{
+        padding: 0 85px;                   
+    }
+    #main img{
+        width: 350px;
+        margin-bottom: 50px;
+    }
+    
+    #main img[class="port"]{
+        width: 300px;
+    }
+
+    #main h4{
+        font-size: 0.9rem;
+    }
+
+    .footer .social{
+        flex-direction: column;
+    }
+
+    .footer .social i, .footer .social a{
+        margin: 3px 0;
     }
 }
