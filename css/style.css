@@ -14,6 +14,10 @@ body{
     color: #383838;
 }
 
+.container{
+    display: flex;
+}
+
 h1{
     font-weight: 500;
 }
@@ -43,10 +47,13 @@ a{
     padding: 40px;
 }
 
+#header a{
+    font-size: 2.5rem;
+}
+
 #header h1{
     font-size: 3rem;
 }
-
 
 #main{
     flex-direction: column;
@@ -190,8 +197,13 @@ a{
 
 @media (max-width: 1300px){
     #header{
-        justify-content: center;
+        justify-content: space-evenly;
     }
+
+    #header a{
+        font-size: 2rem;
+    }
+
     #main{
         padding: 0 200px;
         width: 100vw;
@@ -230,6 +242,10 @@ a{
     }
 }
 @media (max-width: 700px){
+    #header a{
+        font-size: 2rem;
+    }
+
     #main img{
         width: 450px;
         margin-bottom: 50px;
@@ -253,6 +269,10 @@ a{
 }
 
 @media (max-width: 500px){
+    #header a{
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
 
     #main{
         padding: 0 85px;                   
